@@ -1,114 +1,38 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parrots World</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #874545;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        h1, h2, h3 {
-            font-family: 'Georgia', serif;
-            color: #3498db;
-        }
-        .navbar {
-            background-color: #3498db;
-            padding: 10px;
-            text-align: center;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
-        }
-        .navbar a:hover {
-            background-color: #2980b9;
-        }
-        .container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 15px;
-        }
-        .box {
-            background-color: white;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 10px;
-            width: 30%;
-            text-align: center;
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        figcaption {
-            font-size: 14px;
-            color: #555;
-            margin-top: 5px;
-        }
-    </style>
+    <title>Parrot Gallery</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        Home
-        Species
-        Gallery
-        Contact
-    </nav><header>
-    <h1>Welcome to Parrots World</h1>
-</header>
+    <div class="container">
+        <h1>Welcome to the Parrot Gallery</h1>
 
-<section class="container">
-    <div class="box">
-        <h2>About Parrots</h2>
-        <p>Parrots are colorful, intelligent birds known for their ability to mimic sounds.</p >
-    </div>
-    <div class="box">
-        <h2>Popular Species</h2>
-        <p>Some famous species include Macaws, Cockatoos, and Parakeets.</p >
-    </div>
-    <div class="box" id="gallery">
-        <h2>Gallery</h2>
-        <p>Explore stunning images of parrots below:</p >
-        <figure>
-            <a href="https://th.bing.com/th/id/OIP.Afl-gQ8sSf1VoDGt2Bu9QAHaE8?w=257&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" target="_blank">
-                The Scarlet Macaw
-            </a >
-            <figcaption>The Scarlet Macaw is a large, red, yellow, and blue parrot native to South America.</figcaption>
-        </figure>
-        <figure>
-            <a href="https://th.bing.com/th/id/R.cf7fd1f92a533e74870ccb53b0929efb?rik=jXt%2b5XNtZN6ZHw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-fIBGQFHZPPw%2fT965Dj1qBUI%2fAAAAAAAALIE%2fNqfZWwNzSBk%2fs1600%2fParrot-free-wallpaper.jpg&ehk=TkA3mZHlYFfUdv0jUn%2fItQvd%2b5hunpv7fSMYDa78SqY%3d&risl=&pid=ImgRaw&r=0" target="_blank">
-                The Blue-and-Yellow Macaw
-            </a >
-            <figcaption>The Blue-and-Yellow Macaw is known for its vibrant blue and gold plumage and is a popular pet.</figcaption>
-        </figure>
-    </div>
-</section>
+        <!-- "Click to see the beautiful pictures of parrots" Button -->
+        <button id="showImagesBtn">Click to see the beautiful pictures of parrots</button>
 
-<footer>
-    <button onclick="alert('Thank you for visiting Parrots World!')">Click Me</button>
-</footer>
+        <!-- Placeholder for displaying the pictures -->
+        <div id="galleryContainer" class="gallery-container">
+            <!-- Images will be dynamically inserted here by JS -->
+        </div>
 
+        <!-- The Alert button -->
+        <button id="alertMeBtn">Click me for a message</button>
+
+        <!-- The Hover Button -->
+        <button id="hoverButton">Hover over me!</button>
+
+        <!-- The Incrementing Counter Button -->
+        <button id="buttonCounter">Click me to count!</button>
+        <p id="counter">0</p>
+
+    </div>
+
+    <script src="./script/script.js"></script>
 </body>
+
 </html>
